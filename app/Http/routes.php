@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('hello-world', function () {
+/* Route::get('hello-world', function () {
     return 'hello world';
 });
 
@@ -28,3 +28,30 @@ Route::get('berita/{berita?}', function ($berita="laravel 5") {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+*/
+Route::get('pengguna','penggunacontroller@awal');
+
+Route::get('pengguna/tambah','penggunacontroller@tambah');
+
+Route::get('pengguna/add', function(){
+	$pengguna = new App\Pengguna();
+    	$pengguna->username = "kahar";
+    	$pengguna->password = "nusiyaya";
+    	$pengguna->save();
+    	return "data dengan username {$pengguna->username} telah disimpan";
+});
+
+Route::get('ruangan','ruangancontroller@awal');
+
+Route::get('matakuliah','matakuliahcontroller@awal');
+
+Route::get('mahasiswa','mahasiswacontroller@awal');
+
+Route::get('jadwal_matakuliah','jadwal_matakuliahcontroller@awal');
+
+Route::get('dosen','dosencontroller@awal');
+
+Route::get('dosen_matakuliah','dosen_matakuliahcontroller@awal');
+
+
