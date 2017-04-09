@@ -78,6 +78,42 @@ Route::get('ruangan/edit/{ruangan}','ruangancontroller@edit');
 Route::post('ruangan/edit/{ruangan}','ruangancontroller@update');
 Route::get('ruangan/hapus/{ruangan}','ruangancontroller@hapus');
 
+Route::get('mahasiswa/lihat/{mahasiswa}','mahasiswacontroller@lihat');
+Route::get('mahasiswa/tambah','mahasiswacontroller@tambah');
+Route::post('mahasiswa/simpan','mahasiswacontroller@simpan');
+Route::get('mahasiswa/edit/{mahasiswa}','mahasiswacontroller@edit');
+Route::post('mahasiswa/edit/{mahasiswa}','mahasiswacontroller@update');
+Route::get('mahasiswa/hapus/{mahasiswa}','mahasiswacontroller@hapus');
+
+Route::get('jadwal_matakuliah/lihat/{jadwal_matakuliah}','jadwal_matakuliahcontroller@lihat');
+Route::get('jadwal_matakuliah/tambah','jadwal_matakuliahcontroller@tambah');
+Route::post('jadwal_matakuliah/simpan','jadwal_matakuliahcontroller@simpan');
+Route::get('jadwal_matakuliah/edit/{jadwal_matakuliah}','jadwal_matakuliahcontroller@edit');
+Route::post('jadwal_matakuliah/edit/{jadwal_matakuliah}','jadwal_matakuliahcontroller@update');
+Route::get('jadwal_matakuliah/hapus/{jadwal_matakuliah}','jadwal_matakuliahcontroller@hapus');
+
+Route::get('dosen_matakuliah/lihat/{dosen_matakuliah}','dosen_matakuliahcontroller@lihat');
+Route::get('dosen_matakuliah/tambah','dosen_matakuliahcontroller@tambah');
+Route::post('dosen_matakuliah/simpan','dosen_matakuliahcontroller@simpan');
+Route::get('dosen_matakuliah/edit/{dosen_matakuliah}','dosen_matakuliahcontroller@edit');
+Route::post('dosen_matakuliah/edit/{dosen_matakuliah}','dosen_matakuliahcontroller@update');
+Route::get('dosen_matakuliah/hapus/{dosen_matakuliah}','dosen_matakuliahcontroller@hapus');
+Route::post('dosen_matakuliah','dosen_matakuliahcontroller@awal');
+
+
+Route::get('dosen/lihat/{dosen}','dosencontroller@lihat');
+Route::get('dosen/tambah','dosencontroller@tambah');
+Route::post('dosen/simpan','dosencontroller@simpan');
+Route::get('dosen/edit/{dosen}','dosencontroller@edit');
+Route::post('dosen/edit/{dosen}','dosencontroller@update');
+Route::get('dosen/hapus/{dosen}','dosencontroller@hapus');
+
+
+
+
+
+
+
 
 
 
